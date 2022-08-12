@@ -107,6 +107,7 @@ for i in range(i_start, params['train_it']):
     
     # Get start time for function timing
     start_time = time.time()
+    print('Iteration ' + str(i) + ' of ' + str(params['train_it']) + ' time: ' + str(start_time))
     # Get updated parameters for this backprop iteration
     eta_new, lambda_new, p2g_scale_offset, lr, walk_length_center, loss_weights = parameters.parameter_iteration(i, params)
     # Update eta and lambda
